@@ -1,0 +1,14 @@
+multitenant:
+  tenantKey: X-Person-Tenant
+  defaultTenant: public
+spring:
+  datasource:
+      url: jdbc:postgresql://localhost:5432/multi_tenant
+      username: postgres
+      password:
+      driverClassName: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
