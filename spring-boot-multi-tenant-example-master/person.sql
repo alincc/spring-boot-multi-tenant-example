@@ -9,3 +9,6 @@ CREATE TABLE schema2.person (
     first_name character varying,
     last_name character varying
 );
+
+insert into schema1.person (first_name, last_name) values ('Ryan', 'Abu');  
+insert into schema2.person (first_name, last_name) values ('Jad', 'Abu'); 
